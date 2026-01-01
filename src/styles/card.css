@@ -112,3 +112,26 @@ input {
 .side-info {
   margin-bottom: 16px;
 }
+
+@media (max-width: 768px) {
+  .ticket {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ticket {
+    flex-direction: column;
+  }
+  .ticket-side::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    height: 20px;
+    width: 100%;
+    background: radial-gradient(circle, #fff 40%, transparent 41%);
+    background-size: 20px 20px;
+  }
+}
